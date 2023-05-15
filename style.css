@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    width: 100%;
+}
+:root {
+    --bg-color: #a500cb
+}
+/******************************General CSS********************************************/
+.container{
+    max-width: 1440px;
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/************************************************************************************/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 50px; */
+    background-color: #f5f5f5;
+            /* display: flex; */
+            /* justify-content: space-between; */
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+.logo{
+    
+        height: 30px;
+        margin-right: 10px;
+    
+}
+.head {
+    max-width:1440px ;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.head__text a {
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.head__navbar ul{
+    justify-content: center;
+    gap: 4rem;
+}
+.head__navbar a {
+    font-size: 1.2rem;
+    color: black;
+}
+.head__navbar a:hover {
+    color: var(--bg-color);
+}
+.head__btn {
+   padding: 1rem 2.5rem;
+   border: 2px solid var(--bg-color);
+   border-radius: 1rem;
+   color: var(--bg-color);
+   font-size: 1rem;
+   background-color: white;
+}
+.head__btn:hover {
+    background-color: rgb(185, 133, 235);
+    color: white;
+}
+.head__btn:active {
+    background-color: skyblue;
+    color: blue;
+}
+
+/**********************************************Start of FIRST BANNER*******************************************/
+
+.first_banner {
+    background: url("./image/back3.png") no-repeat fixed center/cover;
+    height: 45rem;
+    text-align: center;
+    padding-top:10rem  ;
+}
+.first_banner__text {
+    background-color: transparent;
+    height: 40rem; 
+}
+.first_banner h1 {
+    font-size: 3rem;
+    color:var(--bg-color);
+    margin-bottom: 1rem;
+}
+.first_banner p {
+    padding: 2rem 6rem;
+    color: #b984db;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.btn--purple {
+    background-color: var(--bg-color);
+    margin-right: .7rem;
+}
+.btn--purple:hover {
+    background-color:rgb(185, 133, 235) ;
+}
+.btn--purple:active {
+    background-color: blueviolet;
+}
+.btn--blue {
+    background-color: rgb(103, 103, 225);
+}
+.btn--blue:hover{
+    background-color: skyblue;
+}
+.btn--blue:active {
+    background-color: blueviolet;
+}
+/********************************************************End of first banner *************************************/
+
+/*****************************************Start of Fantastic Features Section***************************************/
+.features {
+    background: url("./image/back6.jpg") no-repeat fixed center/cover;
+    /* height: 35rem; */
+    text-align: center;
+    align-items: center;
+    /* margin-top: 5rem; */
+}
+.features h1 {
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    color: wheat;
+}
+.features p {
+    padding: 0rem 3rem;
+    font-size: 1.3rem;
+    color: white;
+    line-height: 2.5rem;
+}
+.features__boxes{
+    margin-top: 3.5rem;
+    margin-bottom: 7rem;
+     display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.responsive {
+    margin: 1.5rem 0rem;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2rem;
+    overflow-y: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease;
+}
+.responsive img {
+    width: 70%;
+    margin-bottom: 1.5rem;
+}
+.responsive img[alt="responsive"]
+{
+    width: 90%;
+}
+.responsive h2 {
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+/*********************************************************************************************************/
+
+/************************************** Start of like and share Section***********************************/
+
+.like_Share {
+    background: url("./image/back8.jpg") no-repeat fixed center/cover;
+    height: 40rem;
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: space-around;
+    /* align-items: center; */
+    padding: 2rem;
+    padding-top: 7rem;
+}
+.pointers{
+    
+    width: 45%;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+.like_share__text {
+        background-color: transparent;
+        /* border: 2px solid red; */
+        height: 40rem; 
+}
+.like_share__text h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--bg-color);
+    margin-bottom: 1rem;
+}
+.like_share__text p {
+    font-size: 1.3rem;
+    color: wheat;
+    margin-bottom: 2rem;
+}
+.btn--size {
+    padding: 1rem 3.3rem;
+}
+
+/**************************************Start of About us Section****************************************/
+
+.about {
+    
+    background-color: rgb(239, 237, 237);
+    /* flex-wrap: wrap; */
+}
+.about__birdimage img{
+    max-width: 90%;
+}
+.about__text {
+    max-width: 50%;
+    padding-right: 5rem;
+    
+}
+.about__text h1 {
+ font-size: 2.5rem;
+ font-weight: 500;
+ color: var(--bg-color);
+ margin-bottom: 1rem;
+}
+.about__text p {
+ font-size: 1rem;
+ font-weight: 500;
+ color: gray;
+ margin-bottom: 1rem;
+ margin-bottom: 2rem;
+}
+.about_icon_row h3 {
+    font-size: 1.5rem;
+}
+
+/***********************************************Email Section Start*****************************************/
+.foot {
+    text-align: center;
+    margin-top: 5rem;
+}
+.foot p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.foot .btn--sizes {
+    padding: 10px;
+    min-width: 5%;
+    border-radius: 5px;
+}
+.foot input {
+    min-width: 25%;
+    padding: 10px;
+    border: 1px solid var(--bg-color);
+    border-radius: 5px;
+}
+.foot__icon {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.foot__icon .fa-brands {
+    font-size: 1.4rem;
+    color: var(--bg-color);
+}
+
+/**************************************************FOOTER SECTION********************************************/
+footer{
+    text-align: center;
+    border-top: 1px solid rgb(209, 207, 207);
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+/***********************************************For tab/phone*****************************/
+
+.head1 {
+    display: none;
+    padding: 1rem;
+}
+.head1__text a{
+    color: var(--bg-color);
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+.head1__icon {
+    padding: .5rem 1.5rem;
+    border: 1px solid #ccc;
+}
+/*********************************Media Query TAB*******************************************/
+@media (min-width:600px) and (max-width:1280px)
+{
+    header{
+        display: none;
+    }
+    .head1 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .services__box__row h3 {
+        font-size: 1.4rem;
+    }
+    .services__box__row p {
+        font-size: 1rem;
+    }
+    .about__text {
+        padding-right: 0rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    .about img {
+        max-width:100%;
+    }
+}
+
+/***********************************Media Query Phone****************************************/
+@media (min-width:0px) and (max-width:600px)
+{
+    header{
+        display: none;
+    }
+    .head1 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .features__boxes {
+        flex-direction: column;
+    }
+    .responsive {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .like_Share {
+        padding-right: 3rem;
+        padding-left: 1rem;
+        padding-top: 2.5rem;
+    }
+    .features p {
+        padding: 0rem 1rem;
+    }
+    .services__box {
+        flex-direction: column;
+    }
+    .about_icon {
+        display: none;
+    }
+    .about__text {
+        padding-right: 0rem;
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+    .about img {
+        max-width: 100%;
+    }
+    .about__text h1 {
+        font-size: 1.8rem;
+    }
+    .about__text p {
+        font-size: 1rem;
+    }
+}
+@media (max-width:1055px)
+{
+    .about{
+        flex-direction: column;
+    }
+}
